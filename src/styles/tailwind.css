@@ -1,0 +1,5 @@
+@import 'tailwindcss';
+
+@theme {
+  --radius-bp: var(--bp-radius);
+}

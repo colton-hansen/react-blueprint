@@ -1,0 +1,49 @@
+{
+  "app": {
+    "name": "Blueprint"
+  },
+  "nav": {
+    "home": "Главная",
+    "fonts": "Шрифты",
+    "forms": "Формы",
+    "buttons": "Кнопки",
+    "popups": "Попапы",
+    "more": "Ещё"
+  },
+  "sidebar": {
+    "mainMenu": "Навигация",
+    "contactsTitle": "Контакты",
+    "theme": "Тема",
+    "language": "Язык",
+    "account": "Аккаунт",
+    "contacts": {
+      "github": "GitHub",
+      "telegram": "Telegram"
+    }
+  },
+  "theme": {
+    "white": "White",
+    "light": "Light",
+    "dark": "Dark",
+    "black": "Black"
+  },
+  "footer": {
+    "line": "Blueprint — витрина личной UI-библиотеки."
+  },
+  "notFound": {
+    "code": "404"
+  },
+  "fonts": {
+    "title": "Типографика",
+    "sample": "Съешь же ещё этих мягких французских булок, да выпей чаю."
+  },
+  "forms": {
+    "title": "Элементы форм"
+  },
+  "buttons": {
+    "title": "Кнопки"
+  },
+  "popups": {
+    "title": "Попапы"
+  }
+}

@@ -1,0 +1,27 @@
+[data-theme='white'] {
+  --bp-bg: #ffffff;
+  --bp-text: #111827;
+  --bp-text-muted: #6b7280;
+  --bp-border: #e5e7eb;
+}
+
+[data-theme='light'] {
+  --bp-bg: #eef0f3;
+  --bp-text: #1f2937;
+  --bp-text-muted: #64748b;
+  --bp-border: #d8dde5;
+}
+
+[data-theme='dark'] {
+  --bp-bg: #0e0e10;
+  --bp-text: #ffffff;
+  --bp-text-muted: #8e8e93;
+  --bp-border: #2e2e33;
+}
+
+[data-theme='black'] {
+  --bp-bg: #000000;
+  --bp-text: #f5f5f5;
+  --bp-text-muted: #a3a3a3;
+  --bp-border: #262626;
+}

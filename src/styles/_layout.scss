@@ -1,0 +1,41 @@
+@use 'spacing';
+
+.bp-shell {
+  background: var(--bp-bg);
+  color: var(--bp-text);
+  display: flex;
+  min-height: 100dvh;
+}
+
+.bp-main-col {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.bp-main {
+  flex: 1;
+}
+
+.bp-page {
+  padding: spacing.$bp-v-step * 4 spacing.$bp-h-step * 3;
+}
+
+.bp-page--center {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 40vh;
+}
+
+.bp-footer {
+  color: var(--bp-text-muted);
+  font-size: 0.8125rem;
+  padding: spacing.$bp-v-step * 2 spacing.$bp-h-step * 3;
+}
+
+.bp-sidebar {
+  flex-shrink: 0;
+  width: spacing.$bp-h-step * 24;
+}

@@ -1,0 +1,49 @@
+{
+  "app": {
+    "name": "Blueprint"
+  },
+  "nav": {
+    "home": "Home",
+    "fonts": "Fonts",
+    "forms": "Forms",
+    "buttons": "Buttons",
+    "popups": "Popups",
+    "more": "More"
+  },
+  "sidebar": {
+    "mainMenu": "Navigation",
+    "contactsTitle": "Contacts",
+    "theme": "Theme",
+    "language": "Language",
+    "account": "Account",
+    "contacts": {
+      "github": "GitHub",
+      "telegram": "Telegram"
+    }
+  },
+  "theme": {
+    "white": "White",
+    "light": "Light",
+    "dark": "Dark",
+    "black": "Black"
+  },
+  "footer": {
+    "line": "Blueprint — personal UI library showcase."
+  },
+  "notFound": {
+    "code": "404"
+  },
+  "fonts": {
+    "title": "Typography",
+    "sample": "The quick brown fox jumps over the lazy dog."
+  },
+  "forms": {
+    "title": "Form elements"
+  },
+  "buttons": {
+    "title": "Buttons"
+  },
+  "popups": {
+    "title": "Popups"
+  }
+}

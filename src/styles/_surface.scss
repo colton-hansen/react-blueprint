@@ -1,1 +1,5 @@
-// Surface / soft-ring — fill in
+.bp-main-outline {
+  background-color: var(--bp-content-bg);
+  border: 1px solid var(--bp-content-border);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}

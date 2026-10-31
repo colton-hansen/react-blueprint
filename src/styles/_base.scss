@@ -13,6 +13,8 @@ html {
 }
 
 body {
+  background-color: var(--bp-page-bg);
+  color: var(--bp-main-text);
   margin: 0;
   -webkit-tap-highlight-color: transparent;
 }

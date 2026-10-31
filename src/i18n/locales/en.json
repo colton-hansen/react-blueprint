@@ -1,4 +1,7 @@
 {
+  "common": {
+    "close": "Close"
+  },
   "app": {
     "name": "Blueprint"
   },
@@ -11,11 +14,16 @@
     "more": "More"
   },
   "sidebar": {
-    "mainMenu": "Navigation",
+    "mainMenu": "Pages",
     "contactsTitle": "Contacts",
+    "settingsTitle": "Settings",
+    "help": "Help",
     "theme": "Theme",
     "language": "Language",
     "account": "Account",
+    "collapse": "Collapse sidebar",
+    "collapseShort": "Collapse",
+    "expand": "Expand sidebar",
     "contacts": {
       "github": "GitHub",
       "telegram": "Telegram"
@@ -28,10 +36,18 @@
     "black": "Black"
   },
   "footer": {
-    "line": "Blueprint — personal UI library showcase."
+    "line": "Blueprint — demo layout for UI components. Work in progress, not a production product."
   },
   "notFound": {
     "code": "404"
+  },
+  "home": {
+    "workspace": "Workspace",
+    "greeting": "Hi there 👋",
+    "title": "What are we building today?",
+    "promptPlaceholder": "Outline your product, flow, or next UI experiment…",
+    "buildTitle": "Build environment",
+    "buildLead": "Connect tools, automate workflows."
   },
   "fonts": {
     "title": "Typography",
@@ -41,7 +57,8 @@
     "title": "Form elements"
   },
   "buttons": {
-    "title": "Buttons"
+    "title": "Buttons",
+    "back": "Back"
   },
   "popups": {
     "title": "Popups"

@@ -1,4 +1,7 @@
 {
+  "common": {
+    "close": "Закрыть"
+  },
   "app": {
     "name": "Blueprint"
   },
@@ -13,9 +16,14 @@
   "sidebar": {
     "mainMenu": "Навигация",
     "contactsTitle": "Контакты",
+    "settingsTitle": "Настройки",
+    "help": "Помощь",
     "theme": "Тема",
     "language": "Язык",
     "account": "Аккаунт",
+    "collapse": "Свернуть sidebar",
+    "collapseShort": "Свернуть",
+    "expand": "Развернуть sidebar",
     "contacts": {
       "github": "GitHub",
       "telegram": "Telegram"
@@ -28,10 +36,18 @@
     "black": "Black"
   },
   "footer": {
-    "line": "Blueprint — витрина личной UI-библиотеки."
+    "line": "Blueprint — демо-макет UI-компонентов. Черновик, не production-продукт."
   },
   "notFound": {
     "code": "404"
+  },
+  "home": {
+    "workspace": "Workspace",
+    "greeting": "Привет 👋",
+    "title": "Что собираем сегодня?",
+    "promptPlaceholder": "Опиши продукт, флоу или следующий UI-эксперимент…",
+    "buildTitle": "Build environment",
+    "buildLead": "Подключай инструменты и автоматизируй процессы."
   },
   "fonts": {
     "title": "Типографика",
@@ -41,7 +57,8 @@
     "title": "Элементы форм"
   },
   "buttons": {
-    "title": "Кнопки"
+    "title": "Кнопки",
+    "back": "Назад"
   },
   "popups": {
     "title": "Попапы"

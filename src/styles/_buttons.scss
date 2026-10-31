@@ -1,1 +1,44 @@
-// Button styles — fill in
+@keyframes bp-round-button-press {
+  0% {
+    transform: scale(0.95);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.bp-round-button-hit {
+  background-color: var(--bp-content-bg);
+  border: 0;
+  cursor: pointer;
+  font: inherit;
+  padding: 0;
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.55;
+  }
+
+  &.is-press-anim {
+    animation: bp-round-button-press 0.4s ease;
+  }
+}
+
+.bp-round-button__icon {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
+
+  svg {
+    color: var(--bp-main-text);
+    display: block;
+    height: 100%;
+    stroke: var(--bp-main-text);
+    width: auto;
+  }
+}

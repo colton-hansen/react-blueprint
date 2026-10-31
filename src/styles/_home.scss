@@ -1,0 +1,178 @@
+$bp-home-noise-svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='256' height='256'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.82' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.55'/%3E%3C/svg%3E");
+
+.bp-main:has(.bp-home) {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.bp-home {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.bp-home__upper {
+  /* Как низко уходит акцент (высота upper-блока) */
+  --bp-home-accent-depth: 72%;
+  /* Насыщенность красного у верха (больше % — ярче, меньше «серый» переход) */
+  --bp-home-accent-strength: 64%;
+
+  background-color: var(--bp-page-bg);
+  background-image: linear-gradient(
+    180deg,
+    color-mix(
+      in srgb,
+      var(--bp-nav-accent) var(--bp-home-accent-strength),
+      var(--bp-page-bg)
+    )
+    0%,
+    color-mix(
+      in srgb,
+      var(--bp-nav-accent) calc(var(--bp-home-accent-strength) * 0.42),
+      var(--bp-page-bg)
+    )
+    calc(var(--bp-home-accent-depth) * 0.55),
+    var(--bp-page-bg) var(--bp-home-accent-depth)
+  );
+  flex: 7 1 0;
+  isolation: isolate;
+  min-height: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.bp-home__upper-noise {
+  background-image: $bp-home-noise-svg;
+  background-repeat: repeat;
+  background-size: 180px 180px;
+  height: var(--bp-home-accent-depth);
+  inset: 0;
+  mix-blend-mode: soft-light;
+  opacity: var(--bp-home-noise-opacity, 0.12);
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
+.bp-home__upper-inner {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  height: 100%;
+  max-width: 42rem;
+  padding: clamp(24px, 5vw, 48px) clamp(20px, 5vw, 48px);
+  position: relative;
+  z-index: 2;
+}
+
+.bp-home__lower {
+  background: var(--bp-page-bg);
+  box-sizing: border-box;
+  display: flex;
+  flex: 3 1 0;
+  flex-direction: column;
+  min-height: 0;
+  overflow: hidden;
+  padding: clamp(20px, 4vw, 32px) clamp(20px, 5vw, 48px);
+}
+
+.bp-home__eyebrow {
+  align-items: center;
+  color: color-mix(in srgb, var(--bp-main-text) 72%, transparent);
+  display: inline-flex;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  gap: 8px;
+  margin: 0;
+}
+
+.bp-home__greeting {
+  color: color-mix(in srgb, var(--bp-main-text) 88%, transparent);
+  font-size: clamp(1.125rem, 2.5vw, 1.375rem);
+  font-weight: 500;
+  line-height: 1.35;
+  margin: 0;
+}
+
+.bp-home__title {
+  color: var(--bp-main-text);
+  font-size: clamp(1.75rem, 5vw, 2.75rem);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 1.12;
+  margin: 0;
+  max-width: 14ch;
+}
+
+.bp-home__prompt {
+  margin-top: 8px;
+  max-width: 28rem;
+}
+
+.bp-home__prompt-card {
+  align-items: center;
+  backdrop-filter: blur(12px);
+  background: color-mix(in srgb, var(--bp-main-text) 6%, transparent);
+  border: 1px solid color-mix(in srgb, var(--bp-main-text) 10%, transparent);
+  border-radius: 14px;
+  color: color-mix(in srgb, var(--bp-main-text) 55%, transparent);
+  display: flex;
+  font-size: 0.875rem;
+  gap: 12px;
+  line-height: 1.35;
+  padding: 14px 16px;
+}
+
+.bp-home__prompt-icon {
+  align-items: center;
+  background: color-mix(in srgb, var(--bp-nav-accent) 18%, transparent);
+  border-radius: 10px;
+  color: var(--bp-nav-accent);
+  display: flex;
+  flex-shrink: 0;
+  height: 36px;
+  justify-content: center;
+  width: 36px;
+}
+
+.bp-home__section-title {
+  color: var(--bp-main-text);
+  flex-shrink: 0;
+  font-size: 1.125rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin: 0 0 4px;
+}
+
+.bp-home__section-lead {
+  color: var(--bp-sub-text);
+  flex-shrink: 0;
+  font-size: 0.875rem;
+  margin: 0 0 12px;
+}
+
+.bp-home__cards {
+  display: grid;
+  flex: 1;
+  gap: 12px;
+  grid-auto-rows: 1fr;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  list-style: none;
+  margin: 0;
+  min-height: 0;
+  padding: 0;
+}
+
+.bp-home__card {
+  background: var(--bp-content-bg);
+  border: 1px solid var(--bp-content-border);
+  border-radius: 12px;
+  min-height: 0;
+}
